@@ -160,8 +160,33 @@ HOST: vk-desktop                  Loss%   Snt   Last   Avg  Best  Wrst StDev
 >7. Какие DNS сервера отвечают за доменное имя dns.google? Какие A записи? воспользуйтесь утилитой `dig`
 ### Ответ ###     
 ```bash
-    
+vk@vk-desktop:~$ dig  @8.8.8.8 dns.google
+
+; <<>> DiG 9.18.1-1ubuntu1.1-Ubuntu <<>> @8.8.8.8 dns.google
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 61627
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;dns.google.			IN	A
+
+;; ANSWER SECTION:
+dns.google.		351	IN	A	8.8.8.8
+dns.google.		351	IN	A	8.8.4.4
+
+;; Query time: 19 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Sun Jul 10 21:54:34 MSK 2022
+;; MSG SIZE  rcvd: 71
 ```
+Ответ на вопрос видим как
+dns.google.		351	IN	A	8.8.8.8
+dns.google.		351	IN	A	8.8.4.4
+
 >8. Проверьте PTR записи для IP адресов из задания 7. Какое доменное имя привязано к IP? воспользуйтесь утилитой `dig`
 ### Ответ ###     
 ```bash

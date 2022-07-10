@@ -48,15 +48,59 @@ Connection: close
 Дольше всего обрабатывался запрос основного документа запрашиваемой страницы - длительность 1.5 с
 
 >3. Какой IP адрес у вас в интернете?
-### Ответ ###     
-```bash
-    
-```
+### Ответ ###  
+Мой адрес 91.188.184.23 - так показывает http://whoer.net
+
 >4. Какому провайдеру принадлежит ваш IP адрес? Какой автономной системе AS? Воспользуйтесь утилитой `whois`
 ### Ответ ###     
 ```bash
-    
+ inetnum:        91.188.184.0 - 91.188.184.255
+netname:        DigitOne-M-NET-91-188-184
+descr:          DigitOne M Network
+country:        RU
+admin-c:        DNOC3-RIPE
+tech-c:         DNOC3-RIPE
+status:         ASSIGNED PA
+mnt-by:         TELECALL-MNT
+created:        2011-04-22T07:16:02Z
+last-modified:  2020-09-03T06:49:12Z
+source:         RIPE # Filtered
+
+role:           Digit One Network Operations Center
+address:        1 Veshnyakovsky pr, 1s8
+address:        109456, Moscow, Russian Federation
+remarks:        ------------------------------------------
+remarks:        Routing and peering issues: noc@almatel.ru
+remarks:        Report SPAM and abuse: abuse@almatel.ru
+remarks:        Customer support: support@almatel.ru
+remarks:        General information: noc@almatel.ru
+remarks:        ------------------------------------------
+admin-c:        AM45650-RIPE
+tech-c:         NB7706-RIPE
+nic-hdl:        DNOC3-RIPE
+created:        2010-03-29T11:04:54Z
+last-modified:  2019-06-05T10:38:17Z
+source:         RIPE # Filtered
+mnt-by:         MNT-DIGIT1
+mnt-by:         MNT-SETEL
+
+% Information related to '91.188.176.0/20AS8905'
+
+route:          91.188.176.0/20
+descr:          Digit One LLC
+origin:         AS8905
+mnt-by:         TELECALL-MNT
+mnt-by:         MNT-DIGIT1
+created:        2011-08-11T04:45:08Z
+last-modified:  2012-11-22T09:06:23Z
+source:         RIPE
+
 ```
+
+Провайдер - Цифра1 (DigitOne M Network), AS8905
+ 
+
+
 >5. Через какие сети проходит пакет, отправленный с вашего компьютера на адрес 8.8.8.8? Через какие AS? Воспользуйтесь утилитой `traceroute`
 ### Ответ ###     
 ```bash

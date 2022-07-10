@@ -1,7 +1,7 @@
 # devops-DZ3.6
 ## Домашнее задание к занятию "3.6. Компьютерные сети, лекция 1"
 >1.  Работа c HTTP через телнет.
-   Подключитесь утилитой телнет к сайту stackoverflow.com telnet stackoverflow.com 80
+   Подключитесь утилитой телнет к сайту stackoverflow.com ``` bash telnet stackoverflow.com 80 ```
    отправьте HTTP запрос
 ```
 GET /questions HTTP/1.0
